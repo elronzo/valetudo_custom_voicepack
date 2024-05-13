@@ -72,6 +72,7 @@ if __name__ == "__main__":
             if ip_address:
                 url = f"http://{ip_address}:{PORT}/{TAR_FILENAME}"
                 print(f"Serving file at: {url}")
+                print(f"Language code: {COUNTRY_CODE}")
                 serve_tarfile()  # Serve the tar.gz file
             else:
                 print("Failed to retrieve IP address. Exiting.")
